@@ -19,5 +19,6 @@ print (12**2)
 # Floor Division Operation
 print (12//5)
 
+# String Variable
 full_name = "Devnth Jayasekara"
 print(full_name)
