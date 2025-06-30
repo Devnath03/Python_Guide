@@ -65,3 +65,28 @@ print(int(num2))
 f1 = True
 print(f1)
 
+# Boolean Operations
+h4 = 20==20
+print(h4)
+h5 = 20>20
+print(h5)
+l6 = 41>20
+print(l6)
+
+# Boolean Operations with Comparison
+hnu = 10!= 10
+print(hnu)
+hyn = 20!= 52
+print(hyn)
+
+# Boolean Operations with Logical Operators
+print(10 == 10 and 21==20)
+print(10 == 10 or 21==20)
+print(not(10 == 10))
+
+# String Concatenation
+name = "Devnath"
+name1 = "Jayasekara"
+print(name + " " + name1)
+print(name + " " + str(10))
+print(len(name + " " + name1))
