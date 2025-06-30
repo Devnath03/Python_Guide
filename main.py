@@ -22,6 +22,7 @@ print (12//5)
 # String Variable
 full_name = "Devnth Jayasekara"
 print(full_name)
+print(type(full_name))
 
 # Variable Assignment and Increment
 num = 12
@@ -47,3 +48,11 @@ print(num)
 num = 10
 num /= 2
 print(num)
+print(type(num))
+
+# Variable Assignment and Modulus
+num1 = 10
+num2 = 10.5
+print(num1 , +5, num2)
+print(type(num1))
+print(type(num2))
