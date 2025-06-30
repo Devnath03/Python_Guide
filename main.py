@@ -22,3 +22,5 @@ print (12//5)
 # String Variable
 full_name = "Devnth Jayasekara"
 print(full_name)
+
+
