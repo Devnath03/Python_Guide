@@ -8,4 +8,8 @@ print (12-1)
 print (12*1)
 
 # Division Operation
-print (12/1)
+print (12/5)
+
+# Modulus Operation
+print (12%5)
+
