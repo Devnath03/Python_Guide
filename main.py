@@ -23,4 +23,27 @@ print (12//5)
 full_name = "Devnth Jayasekara"
 print(full_name)
 
+# Variable Assignment and Increment
+num = 12
+num = num + 1
+print(num)
 
+# Variable Assignment and Increment using +=
+num = 10
+num += 1
+print(num)
+
+# Variable Assignment and Decrement
+num = 10
+num -= 1
+print(num)
+
+# Variable Assignment and Multiplication
+num = 10
+num *= 2
+print(num)
+
+# Variable Assignment and Division
+num = 10
+num /= 2
+print(num)
