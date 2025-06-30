@@ -56,3 +56,12 @@ num2 = 10.5
 print(num1 , +5, num2)
 print(type(num1))
 print(type(num2))
+
+# Variable Assignment and Type Conversion
+print(float(num1))
+print(int(num2))
+
+# Variable Assignment and Boolean
+f1 = True
+print(f1)
+
