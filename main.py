@@ -7,7 +7,6 @@ print (12-1)
 # Multiplication Operation
 print (12*1)
 
-
 # Division Operation
 print (12/5)
 
