@@ -113,3 +113,32 @@ print(full_name_with_newline)  # 'John\nDoe\nSmith\nJane'
 name.append('Alice')  # Adding a new name to the list
 full_name_after_append = '\n '.join(name)
 print(full_name_after_append)  # 'John\n Doe\n Smith\n Jane\n Alice'
+
+#Inserting a new name at a specific position
+name.insert(2, 'Bob')  # Inserting 'Bob' at index 2
+full_name_after_insert = '\ '.join(name)
+print(full_name_after_insert)  # 'John\ Bob\ Smith\ Jane\ Alice'
+
+# Removing a name from the list
+name.remove('Doe')  # Removing 'Doe' from the list
+full_name_after_remove = '6 '.join(name)
+print(full_name_after_remove)  # 'John\ Bob\ Smith\ Jane\ Alice'
+
+# Sorting the list of names
+name.sort()  # Sorting the list in alphabetical order
+full_name_after_sort = '\ '.join(name)
+print(full_name_after_sort)  # 'Alice\ Bob\ John\ Smith\ Jane'
+
+# Reversing the list of names
+name.reverse()  # Reversing the order of the list
+full_name_after_reverse = '\ '.join(name)
+print(full_name_after_reverse)  # 'Jane\ Smith\ Bob\ John\ Alice'
+
+#Pop Method
+# Using pop() to remove and return the last element
+removed_name = name.pop(2)  # Removes 'Alice'
+print(removed_name)  # 'Alice'
+full_name_after_pop = '\ '.join(name)
+print(full_name_after_pop)  # 'Jane\ Smith\ Bob\ John'
+
+
