@@ -39,3 +39,20 @@ print(nested_list[-2][-1])  # Accessing the last element of the second
 #Slice List
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(list1[0:3])  # Slicing from index 0 to 2
+print(list1[3:6])  # Slicing from index 3 to 5
+print(list1[6:])   # Slicing from index 6 to the end
+print(list1[:3])   # Slicing from the start to index 2
+print(list1[-3:])  # Slicing from the third last element to the end
+print(list1[-6:-3])  # Slicing from the sixth last to the fourth last element
+print(list1[-6:])  # Slicing from the sixth last element to the end
+
+# Slicing with step
+print(list1[::2])  # Slicing with a step of 2 (every second element)
+print(list1[1::2])  # Slicing with a step of 2 starting from index 1 (every second element starting from the second element)
+print(list1[::-1])  # Slicing the entire list in reverse order
+
+# Slicing with negative step
+print(list1[::-2])  # Slicing with a step of -2 (every second element in reverse order)
+
+# Slicing with negative step starting from index -1
+print(list1[-1::-2])  # Slicing with a step of -2 starting
