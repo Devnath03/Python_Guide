@@ -141,4 +141,9 @@ print(removed_name)  # 'Alice'
 full_name_after_pop = '\ '.join(name)
 print(full_name_after_pop)  # 'Jane\ Smith\ Bob\ John'
 
+#Remove Indexes
+name = ['John', 'Doe', 'Smith', 'Jane']
+del name[1:3]  # Removing the element at index 1 (which is 'Doe')
+print(name)  # ['John', 'Smith', 'Jane']
+
 
