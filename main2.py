@@ -56,3 +56,12 @@ print(list1[::-2])  # Slicing with a step of -2 (every second element in reverse
 
 # Slicing with negative step starting from index -1
 print(list1[-1::-2])  # Slicing with a step of -2 starting
+
+#Membership Operators
+print ('they are' in 'they are going to school')
+print('they are' not in 'they are going to school')
+
+#Checking membership in a list
+num = [1, 2, 3, 4, 5]
+print(1 in num)  # True, because 1 is in the list
+print(6 in num)  # False, because 6 is not in the list  
