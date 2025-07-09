@@ -172,3 +172,133 @@ print(min(3 , 4 , 2 ))
 # Joining elements of a list with different separators
 names = ['John', 'Doe', 'Smith', 'Jane']
 print("& ".join(sorted(names)))  # Joining sorted names with '&'
+
+# Joining elements of a list with a comma
+names = ['John', 'Doe', 'Smith', 'Jane']
+names.append('Alice')  # Adding a new name to the list
+print(", ".join(sorted(names)))  # Joining names with a comma
+
+#Tuples
+#Tuple Characteristics
+# Tuples are ordered collections, meaning the order of elements is preserved.
+# Tuples can contain elements of different data types, including integers, strings, and other tuples
+# Tuples are immutable, meaning once created, their elements cannot be changed, added, or removed.
+# Tuples can be nested, meaning a tuple can contain other tuples as elements.
+# Example of a tuple with mixed data types
+mixed_tuple = (1, 'apple', 3.14, (2, 4, 6))
+print(mixed_tuple)  # Output: (1, 'apple', 3.14
+
+# Tuples are immutable sequences in Python, meaning they cannot be changed after creation.
+# Example of creating a tuple
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)  # Output: (1, 2, 3, 4, 5)
+
+# Accessing elements in a tuple 
+print(my_tuple[0])  # Accessing the first element
+print(my_tuple[1])  # Accessing the second element
+print(my_tuple[2])  # Accessing the third element
+print(my_tuple[3])  # Accessing the fourth element
+print(my_tuple[4])  # Accessing the fifth element
+
+# Accessing elements using negative indexing
+print(my_tuple[-1])  # Accessing the last element
+print(my_tuple[-2])  # Accessing the second last element
+print(my_tuple[-3])  # Accessing the third last element
+
+# Nested tuples
+nested_tuple = ((1, 2), (3, 4), (5, 6))
+print(nested_tuple)  # Output: ((1, 2), (3, 4), (5, 6))
+# Accessing elements in the nested tuple
+print(nested_tuple[0])  # Accessing the first sub-tuple 
+print(nested_tuple[1])  # Accessing the second sub-tuple
+print(nested_tuple[2])  # Accessing the third sub-tuple
+print(nested_tuple[-1])  # Accessing the last sub-tuple
+print(nested_tuple[-2])  # Accessing the second last sub-tuple  
+print(nested_tuple[-3])  # Accessing the third last sub-tuple
+
+# Accessing elements in the nested tuple
+print(nested_tuple[0][0])  # Accessing the first element of the first   
+print(nested_tuple[0][1])  # Accessing the second element of the first
+print(nested_tuple[1][0])  # Accessing the first element of the second
+print(nested_tuple[1][1])  # Accessing the second element of the second
+print(nested_tuple[2][0])  # Accessing the first element of the third
+print(nested_tuple[2][1])  # Accessing the second element of the third
+print(nested_tuple[-1][-1])  # Accessing the last element of the last
+print(nested_tuple[-2][-1])  # Accessing the last element of the second
+print(nested_tuple[-3][-1])  # Accessing the last element of the third
+
+# Slicing tuples
+tuple1 = (1, 2, 3, 4, 5,    6, 7, 8, 9)
+print(tuple1[0:3])  # Slicing from index 0 to 2
+print(tuple1[3:6])  # Slicing from index 3 to 5
+print(tuple1[6:])   # Slicing from index 6 to the end
+print(tuple1[:3])   # Slicing from the start to index 2
+print(tuple1[-3:])  # Slicing from the third last element to the end    
+print(tuple1[-6:-3])  # Slicing from the sixth last to the fourth last element
+print(tuple1[-6:])  # Slicing from the sixth last element to the end
+
+#Combine Tuples
+tuple2 = (10, 20, 30)
+tuple3 = (40, 50, 60)
+combined_tuple = tuple2 + tuple3  # Combining two tuples
+print(combined_tuple)  # Output: (10, 20, 30, 40, 50, 60)
+
+#Tuple Methods
+# Count Method  
+# The count() method returns the number of occurrences of a specified value in a tuple.
+tuple4 = (1, 2, 3, 1, 4, 1)
+print(tuple4.count(3))  # Output: 1, because 3 appears once in the tuple
+print(tuple4.count(1))  # Output: 3, because 1 appears three times in the tuple
+
+#Tuple Unpacking
+# Tuple unpacking allows you to assign the elements of a tuple to multiple variables in a single
+# line.
+my_tuple = (1, 2, 3)
+a, b, c = my_tuple  # Unpacking the tuple into variables a, b, and c
+print(a)  # Output: 1
+print(b)  # Output: 2
+print(c)  # Output: 3
+print(a,b,c) # Output: 1 2 3
+
+# Tuple unpacking with nested tuples
+nested_tuple2 = ((1, 2), (3, 4), (5,6))
+a, b, c = nested_tuple2  # Unpacking the nested tuple into variables a, b, and c
+print(a)  # Output: (1, 2)
+print(b)  # Output: (3, 4)
+print(c)  # Output: (5, 6)
+print(a[0], a[1])  # Output: 1 2
+print(b[0], b[1])  # Output: 3 4
+print(c[0], c[1])  # Output: 5 6
+
+# Tuple unpacking with nested tuples and multiple variables
+a, (b, c) = nested_tuple2[0], nested_tuple2[1]  # Unpacking the first element and the second element of the nested tuple
+print(a)  # Output: (1, 2)
+
+#Question 01 testing
+fruits = ('apple', 'banana', 'cherry', 'date')
+print(fruits[1])  # Output: 'banana'
+print(len(fruits))  # Output: 4, because there are four elements in the tuple
+print(fruits[2])  # Output: 'cherry', accessing the last element using negative indexing
+print(fruits[1:4])  # Output: ('banana', 'cherry', 'date'), accessing the last element using negative indexing
+
+# Question 02 testing
+person = ('Alice', 30, 'Engineer')
+a , b  , c = person  # Unpacking the tuple into variables a, b, and c
+print(a)  # Output: 'Alice'
+print(b)  # Output: 30
+print(c)  # Output: 'Engineer'
+
+# Question 03 testing
+products = (
+    ('Apple', 50, 1.2),
+    ('Banana', 30, 0.5),
+    ('Cherry', 100, 2.0),
+    ('Date', 75, 1.5)
+)
+print(products[0][0]) # Output: 'Apple', accessing the first product's name
+print(products[1][1]) # Output: 30, accessing the second product's quantity
+print(products[2][2]) # Output: 2.0, accessing the third product's price
+print(products[3][0]) # Output: 'Date', accessing the fourth product's name
+print(products[0][1:3]) # Output: (50, 1.2), accessing the first product's quantity and price
+
+
