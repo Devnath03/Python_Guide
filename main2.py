@@ -165,3 +165,10 @@ c = [ 100, 200]
 print(max([len (a), len(b), len(c)]))  # This will raise an error because max() expects iterable, not a list of lengths
 print(min([len(a), len(b), len(c)]))  # This will raise an error because min() expects iterable, not a list of lengths
 
+# Correct usage of max() and min() with lists
+print(max(3 , 4 , 2 ))
+print(min(3 , 4 , 2 ))
+
+# Joining elements of a list with different separators
+names = ['John', 'Doe', 'Smith', 'Jane']
+print("& ".join(sorted(names)))  # Joining sorted names with '&'
