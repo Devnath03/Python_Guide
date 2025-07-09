@@ -141,9 +141,27 @@ print(removed_name)  # 'Alice'
 full_name_after_pop = '\ '.join(name)
 print(full_name_after_pop)  # 'Jane\ Smith\ Bob\ John'
 
-#Remove Indexes
+#del Method
+# Using del to remove an element at a specific index
 name = ['John', 'Doe', 'Smith', 'Jane']
 del name[1:3]  # Removing the element at index 1 (which is 'Doe')
 print(name)  # ['John', 'Smith', 'Jane']
 
+#clear Method
+# Using clear() to remove all elements from the list
+name.clear()  # Removing all elements from the list
+print(name)  # []
+
+
+# This code snippet is intended to demonstrate the use of max() and min() functions with lists.
+# However, it contains an error because max() and min() expect an iterable, not a list of lengths.
+# To fix this, we should pass the lists directly to max() and min() instead of  
+# passing a list of their lengths.
+# Example of using max() and min() with lists
+# The following code will raise an error
+a = [ 1, 5 , 8]
+b = [ 2, 6 ,9 , 10]
+c = [ 100, 200]
+print(max([len (a), len(b), len(c)]))  # This will raise an error because max() expects iterable, not a list of lengths
+print(min([len(a), len(b), len(c)]))  # This will raise an error because min() expects iterable, not a list of lengths
 
