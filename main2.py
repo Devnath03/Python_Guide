@@ -87,3 +87,29 @@ num[0] = 100  # Changing the first element of num
 print(num)  # [100, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(num2)  # [100, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(num is num2)  # True, both variables point to the same list object
+
+#Joint Methods
+name = ['John', 'Doe' ,'Smith', 'Jane']
+# Joining elements of a list into a string
+full_name = '\n '.join(name)
+print(full_name)  # 'John\n Doe\n Smith\n Jane'
+# Joining elements of a list with a comma
+full_name_with_comma = ', '.join(name)
+print(full_name_with_comma)  # 'John, Doe, Smith, Jane'
+# Joining elements of a list with a space
+full_name_with_space = ' '.join(name)
+print(full_name_with_space)  # 'John Doe Smith Jane'
+# Joining elements of a list with a hyphen
+full_name_with_hyphen = '-'.join(name)
+print(full_name_with_hyphen)  # 'John-Doe-Smith-Jane'
+# Joining elements of a list with a custom separator
+full_name_with_custom = ' | '.join(name)
+print(full_name_with_custom)  # 'John | Doe | Smith | Jane'
+# Joining elements of a list with a newline character
+full_name_with_newline = '\n'.join(name)
+print(full_name_with_newline)  # 'John\nDoe\nSmith\nJane'
+
+# Adding a new name to the list
+name.append('Alice')  # Adding a new name to the list
+full_name_after_append = '\n '.join(name)
+print(full_name_after_append)  # 'John\n Doe\n Smith\n Jane\n Alice'
