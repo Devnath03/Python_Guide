@@ -35,3 +35,7 @@ print(nested_list[2][0])  # Accessing the first element of the third
 print(nested_list[2][1])  # Accessing the second element of the third
 print(nested_list[-1][-1])  # Accessing the last element of the last sub-list
 print(nested_list[-2][-1])  # Accessing the last element of the second
+
+#Slice List
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list1[0:3])  # Slicing from index 0 to 2
