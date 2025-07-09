@@ -64,4 +64,26 @@ print('they are' not in 'they are going to school')
 #Checking membership in a list
 num = [1, 2, 3, 4, 5]
 print(1 in num)  # True, because 1 is in the list
-print(6 in num)  # False, because 6 is not in the list  
+print(6 in num)  # False, because 6 is not in the list
+
+#Mutable and Immutable Types
+# Mutable types can be changed after creation, while immutable types cannot.
+# Example of a mutable type (list)
+fruit = ['apple', 'banana', 'cherry']
+fruit[0] = 'kiwi'  # Changing the first element
+print(fruit)  # ['kiwi', 'banana', 'cherry']
+
+# Example of an immutable type (string)
+name = 'John'
+name2 = name
+name = 'Doe'  # Changing name does not affect name2
+print(name)  # 'Doe', name is now 'Doe'
+print(name2)  # 'John', name2 remains unchanged
+
+# Example of mutable types (list)
+num = [1,2,3,4,5,6,7,8,9,10]
+num2 = num
+num[0] = 100  # Changing the first element of num
+print(num)  # [100, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(num2)  # [100, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(num is num2)  # True, both variables point to the same list object
