@@ -40,12 +40,12 @@ print(my_set1)
 Sample_set = {101, 102, 103, 104, 105}
 # Adding an element to the Sample_set
 Sample_set.add(106)
-print(Sample_set)
+print("Added New Set :", Sample_set)
 # Removing an element from the Sample_set
 Sample_set.remove(102)
 Sample_Pop = Sample_set.pop()
-print(Sample_Pop)
-print(Sample_set)
+print("Popped Element :", Sample_Pop)
+print("Final Sample Set :", Sample_set)
 #Clearing the Sample_set
 Sample_set.clear()
-print(Sample_set)
+print("Cleared Sample Set :", Sample_set)
