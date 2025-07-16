@@ -1,4 +1,6 @@
 #Sets
+#Sets in Python are unordered collections of unique elements.
+#Creating a Set
 my_set = {1, 2, 3, 4, 5}
 print(my_set)
 
@@ -52,6 +54,8 @@ Sample_set.clear()
 print("Cleared Sample Set :", Sample_set)
 
 #Dictionaries
+#Dictionary in Python is a collection of key-value pairs.
+#Creating a Dictionary
 my_dict = {
     "name": "Alice",
     "age": 30,
@@ -63,3 +67,27 @@ print(my_dict)
 print(my_dict["name"])  # Accessing value by key
 print(my_dict["age"])
 print(my_dict["city"])
+
+#Adding Key-Value Pairs to a Dictionary
+my_dict["email"] = "alice@example.com"
+print(my_dict)  
+
+#Removing Key-Value Pairs from a Dictionary
+del my_dict["age"]  
+print(my_dict)
+
+#Clearing a Dictionary
+my_dict.clear()
+print(my_dict)
+
+#Pop a Dictionary
+my_dict = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+popped_value = my_dict.pop("age")
+print("Popped Value:", popped_value)
+print("Dictionary after pop:", my_dict)     
+
+
