@@ -108,3 +108,34 @@ my_compound_structure = {
     }
 }
 print("Compound Data Structure:", my_compound_structure)
+
+#Accessing Elements in Compound Data Structures
+print("Name:", my_compound_structure["name"])
+print("Age:", my_compound_structure["age"])
+print("Hobbies:", my_compound_structure["hobbies"])
+print("Address:", my_compound_structure["address"])
+print("Street:", my_compound_structure["address"]["street"])
+print("City:", my_compound_structure["address"]["city"])    
+print("Country:", my_compound_structure["address"]["country"])
+
+#Adding Elements to Compound Data Structures
+my_compound_structure["email"] = "alice@example.com"    
+print("After Adding Email:", my_compound_structure)
+
+#Removing Elements from Compound Data Structures
+del my_compound_structure["age"]
+print("After Removing Age:", my_compound_structure)
+
+#Clearing Compound Data Structures
+my_compound_structure.clear()
+print("After Clearing:", my_compound_structure)
+
+#Pop a Compound Data Structure
+my_compound_structure = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+popped_value = my_compound_structure.pop("age")
+print("Popped Value:", popped_value)
+print("Dictionary after pop:", my_compound_structure)   
