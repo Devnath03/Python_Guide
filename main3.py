@@ -59,7 +59,7 @@ print("Cleared Sample Set :", Sample_set)
 my_dict = {
     "name": "Alice",
     "age": 30,
-    "city": "New York"
+    "city": "New York , USA , Canada , UK"
 }
 print(my_dict)
 
@@ -88,6 +88,21 @@ my_dict = {
 }
 popped_value = my_dict.pop("age")
 print("Popped Value:", popped_value)
-print("Dictionary after pop:", my_dict)     
+print("Dictionary after pop:", my_dict)
+#Add Variable In the String type command line using f string
+f"Current Dictionary: {my_dict}"
 
-
+#Compound Data Structures
+#Compound Data Structures are data structures that can hold multiple values and can be nested within each other.
+#Creating a Compound Data Structure
+my_compound_structure = {
+    "name": "Alice",
+    "age": 30,
+    "hobbies": ["reading", "traveling", "swimming"],
+    "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "country": "USA"
+    }
+}
+print("Compound Data Structure:", my_compound_structure)
