@@ -20,3 +20,11 @@ print(mixed_set)
 my_set1 = {1, 2, 3}
 my_set1.add(6)
 print(my_set1)
+
+#Removing Elements from a Set
+my_set1.remove(2)
+print(my_set1)
+
+#Clear a Set
+my_set1.clear()
+print(my_set1)
