@@ -98,8 +98,10 @@ f"Current Dictionary: {my_dict}"
 my_compound_structure = {
     "name": "Alice",
     "age": 30,
+    #List Type Elemts
     "hobbies": ["reading", "traveling", "swimming"],
     "address": {
+        #Dictionary Type Elements
         "street": "123 Main St",
         "city": "New York",
         "country": "USA"
