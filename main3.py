@@ -38,6 +38,7 @@ print(my_set1)
 #Sample Question 01 to test Sets
 # Creating a Sample_set
 Sample_set = {101, 102, 103, 104, 105}
+print("Sample Set :", Sample_set)
 # Adding an element to the Sample_set
 Sample_set.add(106)
 print("Added New Set :", Sample_set)
