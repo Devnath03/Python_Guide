@@ -34,3 +34,18 @@ my_set1 = {1, 2, 3}
 popped_element = my_set1.pop()
 print(popped_element)
 print(my_set1)
+
+#Sample Question 01 to test Sets
+# Creating a Sample_set
+Sample_set = {101, 102, 103, 104, 105}
+# Adding an element to the Sample_set
+Sample_set.add(106)
+print(Sample_set)
+# Removing an element from the Sample_set
+Sample_set.remove(102)
+Sample_Pop = Sample_set.pop()
+print(Sample_Pop)
+print(Sample_set)
+#Clearing the Sample_set
+Sample_set.clear()
+print(Sample_set)
