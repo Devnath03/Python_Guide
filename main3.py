@@ -50,3 +50,16 @@ print("Final Sample Set :", Sample_set)
 #Clearing the Sample_set
 Sample_set.clear()
 print("Cleared Sample Set :", Sample_set)
+
+#Dictionaries
+my_dict = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+print(my_dict)
+
+#Accessing Dictionary Values
+print(my_dict["name"])  # Accessing value by key
+print(my_dict["age"])
+print(my_dict["city"])
