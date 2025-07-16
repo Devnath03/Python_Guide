@@ -28,3 +28,9 @@ print(my_set1)
 #Clear a Set
 my_set1.clear()
 print(my_set1)
+
+#Pop a Set
+my_set1 = {1, 2, 3}
+popped_element = my_set1.pop()
+print(popped_element)
+print(my_set1)
