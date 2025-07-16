@@ -105,7 +105,12 @@ my_compound_structure = {
         "street": "123 Main St",
         "city": "New York",
         "country": "USA"
-    }
+    },
+    'anupam': {
+        'age': 25,
+        'Degree': 'B.Tech',
+        'Marks': [85.5, 80, 90.0]
+    },
 }
 print("Compound Data Structure:", my_compound_structure)
 
@@ -142,3 +147,12 @@ print("Dictionary after pop:", my_compound_structure)
 
 #Add Variable In the String type command line using f string
 f"Current Compound Data Structure: {my_compound_structure}"
+
+#Add Spaces in print command
+print ("\n")
+
+#Add mark to the Anupam
+#Test Only Command Line, After run show error because of empty list happens via the pop command & Removing commands
+my_compound_structure['anupam']['Marks'].append(100)
+print("After Adding Marks to Anupam:", my_compound_structure)
+
