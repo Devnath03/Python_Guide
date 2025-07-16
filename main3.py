@@ -149,7 +149,8 @@ print("Dictionary after pop:", my_compound_structure)
 f"Current Compound Data Structure: {my_compound_structure}"
 
 #Add Spaces in print command
-print ("\n")
+print ()
+print ()
 
 #Add mark to the Anupam
 #Test Only Command Line, After run show error because of empty list happens via the pop command & Removing commands
