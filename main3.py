@@ -139,3 +139,6 @@ my_compound_structure = {
 popped_value = my_compound_structure.pop("age")
 print("Popped Value:", popped_value)
 print("Dictionary after pop:", my_compound_structure)   
+
+#Add Variable In the String type command line using f string
+f"Current Compound Data Structure: {my_compound_structure}"
