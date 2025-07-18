@@ -109,3 +109,36 @@ if credit_score >= 700:
             print("You don't qualify the loan")
 else:
     print("You  don't qualify for loan.")
+
+
+#Boolean Expressions
+if True:
+    if self_employed :
+        if annual_income >=40000:
+            print("You Qualified for loan")
+        else:
+            print("You don't qualify for loan")
+    else:
+        if annual_income >= 45000:
+            print("You Qualify for loan")
+        else:
+            print("You don't qualify the loan")
+else:
+    print("You  don't qualify for loan.")
+
+
+if False:
+    if self_employed :
+        if annual_income >=40000:
+            print("You Qualified for loan")
+        else:
+            print("You don't qualify for loan")
+    else:
+        if annual_income >= 45000:
+            print("You Qualify for loan")
+        else:
+            print("You don't qualify the loan")
+else:
+    print("You  don't qualify for loan.")
+
+
