@@ -103,3 +103,34 @@ for i in range(5):  # Loop from 0 to 4
 # |--------------|--------------------------------------------|---------------------------------------------|
 # | Loop Type    | Works in both for and while loops.         | Works in both for and while loops.          |
 # ----------------------------------------------------------------------------------------------------------|
+
+# ---------------------------------------------------
+#                  Zip and Enumerate
+# ---------------------------------------------------
+
+# -----------------------
+# zip()
+# -----------------------
+# The zip() function combines elements from two or more sequences
+# (like lists or tuples) into pairs or groups.
+#
+# It matches elements by position: first with first, second with second, etc.
+#
+# The resulting pairs can be used in loops or converted into a list or tuple.
+# If the input sequences are of different lengths, zip() stops at the shortest.
+#
+# Common use: Loop through multiple related lists together.
+
+# -----------------------
+# enumerate()
+# -----------------------
+# The enumerate() function adds an index (a counter) to each item in a sequence.
+#
+# It is useful when you need both the position and the value of items while looping.
+#
+# Instead of manually creating a counter variable, use enumerate() for cleaner code.
+#
+# Common use: Numbering items in a list during a loop.
+
+print(list(zip([1, 2, 3 ], [7, 8, 9 ])))
+    
