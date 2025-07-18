@@ -166,8 +166,12 @@ upper_cities = []
 print("Before mod cities :" , mod_cities )
 
 for city in cities:
-    mod_cities.append(city + 'UK')
-    upper_cities.append(city.upper())
+    if city != 'Chicago':
+        mod_cities.append(city + 'UK')
+    else:
+        mod_cities.append(city)
+
+        upper_cities.append(city.upper())
 
 print("After mod cities :" , mod_cities)
 print("After cities : " , upper_cities)
