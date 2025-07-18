@@ -53,3 +53,5 @@ print("Password Correct")                     # printed after correct password i
 # | When to Use   | When you know how many times to loop.     |When you don’t know the number of iterations.|
 # ----------------------------------------------------------------------------------------------------------
 
+#Break Statement
+# Break Mean
