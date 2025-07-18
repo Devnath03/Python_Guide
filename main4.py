@@ -146,6 +146,7 @@ else:
 #For loops
 cities = {'Canada', 'New York', 'Chicago', 'America'}
 for city in cities:
-    print(city)
+    print(city.upper())
+    print(city.lower())
 print("Done")
 
