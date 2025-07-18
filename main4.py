@@ -35,3 +35,30 @@ elif 10 == 10:
     print("This is also true")
 else:
     print("This is false")
+
+#Conditional Statements with Nested if
+# Conditional statements can be nested within each other to check multiple conditions.
+if 10 == 10:
+    print("Outer condition is true")
+    if 5 == 5:
+        print("Inner condition is also true")   
+# Conditional statements can also be used to check for multiple conditions using logical operators.
+if 10 == 10 and 5 == 5:
+    print("Both conditions are true")
+else:
+    print("At least one condition is false")
+# Conditional statements can also be used to check for multiple conditions using logical operators.
+if 10 == 10 or 5 == 6:  
+    print("At least one condition is true")
+# Conditional statements can also be used to check for multiple conditions using logical operators.
+if not (10 == 2):
+    print("The condition is false, so this will be printed")
+# Conditional statements can also be used to check for multiple conditions using logical operators.
+if 10 != 2:
+    print("10 is not equal to 2, so this will be printed")
+# Conditional statements can also be used to check for multiple conditions using logical operators.
+if 10 < 20:
+    print("10 is less than 20, so this will be printed")
+# Conditional statements can also be used to check for multiple conditions using logical operators.
+if 20 > 10:
+    print("20 is greater than 10, so this will be printed")
