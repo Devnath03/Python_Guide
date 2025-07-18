@@ -64,31 +64,48 @@ if 20 > 10:
     print("20 is greater than 10, so this will be printed")
 
 #sample Questions
-# 1. The person must have a credit score of 700 or higher.
-credit_score = 750  # Example value; you can change this as needed
+# # 1. The person must have a credit score of 700 or higher.
+# credit_score = 750  # Example value; you can change this as needed
+# if credit_score >= 700:
+#     print("The person is eligible for the loan.")
+# else:
+#     print("The person is not eligible for the loan.")
+
+# print()
+
+# # 2. The person must have annual income of $50,000 or more.
+# annual_income = 50000  # Example value; you can change this as needed
+# if annual_income >= 50000:
+#     print("The person is eligible for the loan.")
+# else:
+#     print("The person is not eligible for the loan.")
+
+# # 3. If the person self-employed, their income requirements is reduced to $40,000 or more.
+# self_employed = True  # Example value; you can change this as needed
+# if self_employed:
+#     if annual_income >= 40000:
+#         print("The self-employed person is eligible for the loan.")
+#     else:
+#         print("The self-employed person is not eligible for the loan.")
+
+# # 4. The Person doesn'tmeet this criteria, they are not eligible for the loan.
+# if not (credit_score >= 700 or annual_income >= 50000 or (self_employed and annual_income >= 40000)):
+#     print("The person is not eligible for the loan.")
+
+credit_score = 750
+annual_income = 50000
+self_employed = False
+
 if credit_score >= 700:
-    print("The person is eligible for the loan.")
-else:
-    print("The person is not eligible for the loan.")
-
-print()
-
-# 2. The person must have annual income of $50,000 or more.
-annual_income = 50000  # Example value; you can change this as needed
-if annual_income >= 50000:
-    print("The person is eligible for the loan.")
-else:
-    print("The person is not eligible for the loan.")
-
-# 3. If the person self-employed, their income requirements is reduced to $40,000 or more.
-self_employed = True  # Example value; you can change this as needed
-if self_employed:
-    if annual_income >= 40000:
-        print("The self-employed person is eligible for the loan.")
+    if self_employed :
+        if annual_income >=40000:
+            print("You Qualified for loan")
+        else:
+            print("You don't qualify for loan")
     else:
-        print("The self-employed person is not eligible for the loan.")
-
-# 4. The Person doesn'tmeet this criteria, they are not eligible for the loan.
-if not (credit_score >= 700 or annual_income >= 50000 or (self_employed and annual_income >= 40000)):
-    print("The person is not eligible for the loan.")
-
+        if annual_income >= 45000:
+            print("You Qualify for loan")
+        else:
+            print("You don't qualify the loan")
+else:
+    print("You  don't qualify for loan.")
