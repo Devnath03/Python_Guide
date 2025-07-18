@@ -126,7 +126,6 @@ if True:
 else:
     print("You  don't qualify for loan.")
 
-
 if False:
     if self_employed :
         if annual_income >=40000:
@@ -140,7 +139,6 @@ if False:
             print("You don't qualify the loan")
 else:
     print("You  don't qualify for loan.")
-
 
 #Loops
 #For loops
