@@ -29,3 +29,27 @@ while password != "1234":                     # loop runs as long as password is
     print("Incorrect Password")               # notify user
     password = input("Enter your password : ")# ask again
 print("Password Correct")                     # printed after correct password is entered
+
+# ---------------------------------------------------------------
+#           For Loops & While Loops — Key Differences
+# ---------------------------------------------------------------
+# | Feature       | For Loop                                  | While Loop                                  |
+# |---------------|-------------------------------------------|---------------------------------------------|
+# | Purpose       | Used when the number of iterations        | Used when the number of iterations          |
+# |               | is known.                                 | is unknown.                                 |
+# |---------------|-------------------------------------------|---------------------------------------------|
+# | Syntax        | for item in sequence:                     | while condition:                            |
+# |               |     # Code                                |     # Code                                  |
+# |---------------|-------------------------------------------|---------------------------------------------|
+# | Control       | Iterates over a sequence (range, list,    | Continues as long as the condition is True  |
+# |               | etc.)                                     |                                             |
+# |---------------|-------------------------------------------|---------------------------------------------|
+# | Termination   | Ends when the sequence is exhausted.      | Ends when the condition becomes False.      |
+# |---------------|-------------------------------------------|---------------------------------------------|
+# | Example       | for i in range(5):                        | count = 0                                   |
+# |               |     print(i)                              | while count < 5:                            |
+# |               |                                           |     print(count)                            |
+# |---------------|-------------------------------------------|---------------------------------------------|
+# | When to Use   | When you know how many times to loop.     |When you don’t know the number of iterations.|
+# ---------------------------------------------------------------
+
