@@ -150,3 +150,11 @@ for city in cities:
     print(city.lower())
 print("Done")
 
+for i in range (20):
+    print("Hello")
+
+for i in range(5, 10 ):
+    print(i)
+    
+for i in range(5, 10 , 2):
+    print(i)
