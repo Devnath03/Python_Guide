@@ -111,24 +111,29 @@ else:
     print("You  don't qualify for loan.")
 
 
-#Boolean Expressions
+# -------------------------------
+# BOOLEAN EXPRESSIONS (Loan Check)
+# -------------------------------
+
+# Case where outer condition is True (will always execute this block)
 if True:
-    if self_employed :
-        if annual_income >=40000:
-            print("You Qualified for loan")
+    if self_employed:  # Check if the user is self-employed
+        if annual_income >= 40000:
+            print("You Qualified for loan")  # Self-employed income requirement: 40,000+
         else:
             print("You don't qualify for loan")
-    else:
+    else:  # If not self-employed
         if annual_income >= 45000:
-            print("You Qualify for loan")
+            print("You Qualify for loan")  # Regular income requirement: 45,000+
         else:
             print("You don't qualify the loan")
 else:
-    print("You  don't qualify for loan.")
+    print("You  don't qualify for loan.")  # This won't run
 
+# Case where outer condition is False (skips entire block and runs only else)
 if False:
-    if self_employed :
-        if annual_income >=40000:
+    if self_employed:
+        if annual_income >= 40000:
             print("You Qualified for loan")
         else:
             print("You don't qualify for loan")
@@ -138,40 +143,50 @@ if False:
         else:
             print("You don't qualify the loan")
 else:
-    print("You  don't qualify for loan.")
+    print("You  don't qualify for loan.")  # This will always run in this case
 
-#Loops
-#For loops
+# -------------------------------
+# FOR LOOPS (Iterating Cities and Ranges)
+# -------------------------------
+
+# A set of cities
 cities = {'Canada', 'New York', 'Chicago', 'America'}
-for city in cities:
-    print(city.upper())
-    print(city.lower())
-print("Done")
 
-for i in range (20):
+# Looping through the set and printing each city in upper and lower case
+for city in cities:
+    print(city.upper())  # Convert city name to uppercase
+    print(city.lower())  # Convert city name to lowercase
+print("Done")  # End of city loop
+
+# Print "Hello" 20 times
+for i in range(20):
     print("Hello")
 
-for i in range(5, 10 ):
-    print(i)
-    
-for i in range(5, 10 , 2):
+# Print numbers from 5 to 9
+for i in range(5, 10):
     print(i)
 
+# Print numbers from 5 to 9 with a step of 2 (5, 7, 9)
+for i in range(5, 10, 2):
+    print(i)
 
-#
+# -------------------------------
+# LIST MODIFICATION BASED ON CONDITIONS
+# -------------------------------
+
 cities = {'Canada', 'New York', 'Chicago', 'America'}
-mod_cities = []
-upper_cities = []
+mod_cities = []     # List to hold modified city names
+upper_cities = []   # List to hold uppercase names of selected cities
 
-print("Before mod cities :" , mod_cities )
+print("Before mod cities:", mod_cities)  # Initially empty list
 
+# Loop through each city and modify based on condition
 for city in cities:
     if city != 'Chicago':
-        mod_cities.append(city + 'UK')
+        mod_cities.append(city + 'UK')  # Append 'UK' to city name
     else:
-        mod_cities.append(city)
+        mod_cities.append(city)  # Keep 'Chicago' as is
+        upper_cities.append(city.upper())  # Store uppercase version of 'Chicago'
 
-        upper_cities.append(city.upper())
-
-print("After mod cities :" , mod_cities)
-print("After cities : " , upper_cities)
+print("After mod cities:", mod_cities)   # Show modified city list
+print("After cities:", upper_cities)     # Show uppercase list (should contain 'CHICAGO')
