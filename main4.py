@@ -142,3 +142,10 @@ else:
     print("You  don't qualify for loan.")
 
 
+#Loops
+#For loops
+cities = {'Canada', 'New York', 'Chicago', 'America'}
+for city in cities:
+    print(city)
+print("Done")
+
