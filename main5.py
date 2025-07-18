@@ -111,26 +111,34 @@ for i in range(5):  # Loop from 0 to 4
 # -----------------------
 # zip()
 # -----------------------
-# The zip() function combines elements from two or more sequences
-# (like lists or tuples) into pairs or groups.
+# The zip() function takes two or more sequences (like lists or tuples)
+# and combines them into pairs (or tuples) by matching elements of the same position.
+# For example, the first element of each sequence forms the first pair, 
+# the second elements form the second pair, and so on.
+# If the sequences are not the same length, zip() stops when the shortest sequence ends.
 #
-# It matches elements by position: first with first, second with second, etc.
-#
-# The resulting pairs can be used in loops or converted into a list or tuple.
-# If the input sequences are of different lengths, zip() stops at the shortest.
-#
-# Common use: Loop through multiple related lists together.
+# This is useful when you want to iterate over multiple sequences in parallel.
 
 # -----------------------
 # enumerate()
 # -----------------------
-# The enumerate() function adds an index (a counter) to each item in a sequence.
-#
-# It is useful when you need both the position and the value of items while looping.
-#
-# Instead of manually creating a counter variable, use enumerate() for cleaner code.
-#
-# Common use: Numbering items in a list during a loop.
+# The enumerate() function adds a counter/index to an iterable,
+# returning pairs of (index, value) for each item.
+# It helps when you need to keep track of the position of elements while looping,
+# without manually incrementing a counter variable.
 
-print(list(zip([1, 2, 3 ], [7, 8, 9 ])))
-    
+# Example usage of zip():
+print(list(zip([1, 2, 3], [7, 8, 9])))
+# Output: [(1, 7), (2, 8), (3, 9)]
+# Explanation: The first elements (1 and 7) are paired,
+# second elements (2 and 8), third elements (3 and 9).
+
+# Now, suppose you have a list of pairs and want to unzip them back into separate lists:
+list_of_pairs = [(1, 7), (2, 8), (3, 9)]
+
+# The * operator unpacks the list_of_pairs into separate arguments for zip()
+x, y = zip(*list_of_pairs)
+
+print(x)  # Output: (1, 2, 3)
+print(y)  # Output: (7, 8, 9)
+# Explanation: zip(*list_of_pairs) "unzips" the pairs into separate tuples.
