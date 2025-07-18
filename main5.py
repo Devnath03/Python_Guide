@@ -53,5 +53,53 @@ print("Password Correct")                     # printed after correct password i
 # | When to Use   | When you know how many times to loop.     |When you don’t know the number of iterations.|
 # ----------------------------------------------------------------------------------------------------------
 
-#Break Statement
-# Break Mean
+# -------------------------------
+# Break Statement Example
+# -------------------------------
+# The 'break' statement is used to exit the loop completely
+# when a specific condition is met.
+
+print("Break Statement Output:")
+for i in range(5):  # Loop from 0 to 4
+    if i == 2:       # When i equals 2
+        break        # Exit the loop immediately
+    print(i)         # Print the value of i (only if i < 2)
+
+# Output will be:
+# 0
+# 1
+
+
+# -------------------------------
+# Continue Statement Example
+# -------------------------------
+# The 'continue' statement is used to skip the current iteration
+# and move to the next one.
+
+print("\nContinue Statement Output:")
+for i in range(5):  # Loop from 0 to 4
+    if i == 2:       # When i equals 2
+        continue     # Skip the rest of the code in this iteration
+    print(i)         # Print the value of i (except when i == 2)
+
+# Output will be:
+# 0
+# 1
+# 3
+# 4
+
+
+# ---------------------------------------------------------------
+#                   Break vs. Continue in Loops
+# ----------------------------------------------------------------------------------------------------------|
+# | Feature      | Break                                      | Continue                                    |
+# |--------------|--------------------------------------------|---------------------------------------------|
+# | Purpose      | Exits the loop entirely.                   | Skips the current iteration and continues.  |
+# |--------------|--------------------------------------------|---------------------------------------------|
+# | When to Use  | When you want to stop looping              | When you want to skip an iteration and      |
+# |              | based on a condition.                      | continue.                                   |
+# |--------------|--------------------------------------------|---------------------------------------------|
+# | Example      | Stop when a certain condition is met.      | Skip an iteration when a condition is met.  |
+# |--------------|--------------------------------------------|---------------------------------------------|
+# | Loop Type    | Works in both for and while loops.         | Works in both for and while loops.          |
+# ----------------------------------------------------------------------------------------------------------|
