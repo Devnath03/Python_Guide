@@ -119,14 +119,6 @@ for i in range(5):  # Loop from 0 to 4
 #
 # This is useful when you want to iterate over multiple sequences in parallel.
 
-# -----------------------
-# enumerate()
-# -----------------------
-# The enumerate() function adds a counter/index to an iterable,
-# returning pairs of (index, value) for each item.
-# It helps when you need to keep track of the position of elements while looping,
-# without manually incrementing a counter variable.
-
 # Example usage of zip():
 print(list(zip([1, 2, 3], [7, 8, 9])))
 # Output: [(1, 7), (2, 8), (3, 9)]
@@ -142,3 +134,25 @@ x, y = zip(*list_of_pairs)
 print(x)  # Output: (1, 2, 3)
 print(y)  # Output: (7, 8, 9)
 # Explanation: zip(*list_of_pairs) "unzips" the pairs into separate tuples.
+
+# -----------------------
+# enumerate()
+# -----------------------
+# The enumerate() function adds a counter/index to an iterable,
+# returning pairs of (index, value) for each item.
+# It helps when you need to keep track of the position of elements while looping,
+# without manually incrementing a counter variable.
+
+# Create a list of letters
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+# Use enumerate() to loop through the list with both index and value
+for i, letter in enumerate(letters):
+    # i is the index (position) of the current letter
+    # letter is the actual character from the list
+
+    # Print the index of the current element
+    print("Index :", i)
+    
+    # Print the corresponding letter at that index
+    print("Letter is :", letter)
