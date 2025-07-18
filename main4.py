@@ -156,3 +156,18 @@ for i in range(5, 10 ):
     
 for i in range(5, 10 , 2):
     print(i)
+
+
+#
+cities = {'Canada', 'New York', 'Chicago', 'America'}
+mod_cities = []
+upper_cities = []
+
+print("Before mod cities :" , mod_cities )
+
+for city in cities:
+    mod_cities.append(city + 'UK')
+    upper_cities.append(city.upper())
+
+print("After mod cities :" , mod_cities)
+print("After cities : " , upper_cities)
