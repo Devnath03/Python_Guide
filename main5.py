@@ -153,6 +153,16 @@ for i, letter in enumerate(letters):
 
     # Print the index of the current element
     print("Index :", i)
-    
     # Print the corresponding letter at that index
     print("Letter is :", letter)
+
+# List Comprehensions
+# List Comprehensions mean
+
+fruits = ["apple", "Banana" , "Chery"]
+filtered_fruits = [fruit for fruit in fruits]
+print(filtered_fruits)
+
+fruits = ["apple", "Banana" , "Chery"]
+filtered_fruits = [fruit for fruit in fruits if fruit != "Banana"]
+print(filtered_fruits)
