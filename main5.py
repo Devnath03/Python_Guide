@@ -156,41 +156,63 @@ for i, letter in enumerate(letters):
     # Print the corresponding letter at that index
     print("Letter is :", letter)
 
-# List Comprehensions
-# List Comprehensions mean
+# ----------------------------
+# List Comprehensions Examples
+# ----------------------------
 
+# Creating a list by copying all elements from another list
 fruits = ["apple", "Banana" , "Cherry"]
-full_fruits = [fruit for fruit in fruits]
-print(full_fruits)
+full_fruits = [fruit for fruit in fruits]  # Copies each element from the fruits list
+print(full_fruits)  # Output: ['apple', 'Banana', 'Cherry']
 
+# Creating a list of fruits in uppercase, excluding "Banana"
 fruits = ["apple", "Banana" , "Cherry"]
 filtered_fruits = [fruit.upper() for fruit in fruits if fruit != "Banana"]
-print(filtered_fruits)
+# fruit.upper() --> Converts fruit name to uppercase
+# if fruit != "Banana" --> Filters out "Banana"
+print(filtered_fruits)  # Output: ['APPLE', 'CHERRY']
 
+# Creating a list with only "Banana" in uppercase
 fruits = ["apple", "Banana" , "Cherry"]
 filtered_fruits = [fruit.upper() for fruit in fruits if fruit == "Banana"]
-print(filtered_fruits)
+# if fruit == "Banana" --> Includes only "Banana"
+print(filtered_fruits)  # Output: ['BANANA']
 
+# Adding a suffix "Fru" to each fruit name in uppercase
 fruits = ["apple", "Banana" , "Cherry"]
-filtered_fruits = [fruit.upper()+ "Fru" for fruit in fruits ]
-print(filtered_fruits)
+filtered_fruits = [fruit.upper() + "Fru" for fruit in fruits]
+# fruit.upper() + "Fru" --> Converts to uppercase and adds "Fru"
+print(filtered_fruits)  # Output: ['APPLEFru', 'BANANAFru', 'CHERRYFru']
 print()
 
+# ----------------------------
+# List Comprehensions on Nested Lists
+# ----------------------------
+
+# Nested list: each inner list contains [id, value, ratio]
 data = [
-    [ 1, 200, None],
-    [ 2, 300, 0.5],
-    [ 3, 250, 0.7],
-    [ 4, 500, 0.5]
+    [1, 200, None],
+    [2, 300, 0.5],
+    [3, 250, 0.7],
+    [4, 500, 0.5]
 ]
 
-column_values = [row [0] for row in data if row[0] is not None]
-print(column_values)
+# Extract the first column (IDs) if it's not None
+column_values = [row[0] for row in data if row[0] is not None]
+# row[0] --> Gets the ID from each row
+# if row[0] is not None --> Ensures ID exists
+print(column_values)  # Output: [1, 2, 3, 4]
 print()
 
-column_values = [row [1] for row in data if row[1] is not None]
-print(column_values)
+# Extract the second column (values) if it's not None
+column_values = [row[1] for row in data if row[1] is not None]
+# row[1] --> Gets the value from each row
+print(column_values)  # Output: [200, 300, 250, 500]
 print()
 
-column_values = [row [2] for row in data if row[1] is not None]
-print(column_values)
+# Extract the third column (ratios) only if the second column is not None
+column_values = [row[2] for row in data if row[1] is not None]
+# row[2] --> Gets the ratio
+# if row[1] is not None --> Ensures the value column is present
+print(column_values)  # Output: [None, 0.5, 0.7, 0.5]
 print()
