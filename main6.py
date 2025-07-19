@@ -102,13 +102,35 @@ renegative = [x if x >= 0 else 0 for x in num_list]
 print(renegative)  # Output: [0, 8, 6, 5, 0, 4]
 print()
 
-# 
-list = [ 1, 2, 3]
+# --------------------------------------
+# List Comprehension with zip()
+# --------------------------------------
+
+# Define two lists of equal length
+list = [1, 2, 3]
 list1 = [4, 5, 6]
-sum_list = [x + y for x , y in zip (list, list1)]
+
+# Use zip() to pair elements from both lists and add corresponding elements
+# This creates a new list with the sum of elements at each position
+sum_list = [x + y for x, y in zip(list, list1)]
+
+# Output: [5, 7, 9]
 print(sum_list)
 
-# matrix
-matrix = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
-transpose = [[row [i] for row in matrix ] for i in range (len(matrix[0]))]
+# --------------------------------------
+# Transposing a Matrix
+# --------------------------------------
+
+# Define a 3x3 matrix (nested list)
+matrix = [
+    [1, 2, 3],   # Row 0
+    [4, 5, 6],   # Row 1
+    [7, 8, 9]    # Row 2
+]
+
+# Transpose the matrix using nested list comprehension
+# For each column index (i), extract the i-th element from every row
+transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
+
+# Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 print(transpose)
