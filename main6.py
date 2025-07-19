@@ -183,3 +183,24 @@ for i in range(num_columns):
     
     # Print the list of means after each iteration
     print(means)  # Shows cumulative list after each column calculation
+print()
+
+# ---------------------------------------
+# Replacing None values with column means
+# ---------------------------------------
+
+# Loop through each row in the dataset
+for row in data:
+    # Loop through each column index in the row
+    for i in range(num_columns):
+        # Check if the value at the current column is None
+        if row[i] is None:
+            # Replace the None value with the calculated mean of that column
+            row[i] = means[i]
+
+# Print the updated data with no None values
+for row in data:
+    print(row)
+
+
+        
