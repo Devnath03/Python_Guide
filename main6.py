@@ -125,7 +125,7 @@ print(sum_list)
 matrix = [
     [1, 2, 3],   # Row 0
     [4, 5, 6],   # Row 1
-    [7, 8, 9]    # Row 2
+    [7, 8, 9],   # Row 2
 ]
 
 # Transpose the matrix using nested list comprehension
@@ -134,3 +134,27 @@ transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 
 # Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 print(transpose)
+print()
+
+#
+dataster = [
+    [1, 200, None ],
+    [2, 300, 2.5],
+    [3, 400, 0.7],
+    [4, 500, None],
+]
+
+output = [ col for col in dataster if col[2] is not None]
+print(output)
+
+data = [
+    [1, 200, None ],
+    [2, 300, 0.5],
+    [3, None, 0.7],
+    [None, 500, 0.2],
+]
+
+out = [ row for row in data ] 
+print()
+out = [ row for row in data ]
+print(out)
