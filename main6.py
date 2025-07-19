@@ -154,8 +154,11 @@ data = [
     [None, 500, 0.2],
 ]
 
-outs = [ row for row in data ] 
-print(outs)
-print()
-out = [ row for row in data ]
-print(out)
+num_columns = len(data[0])
+means = []
+
+for i in range(num_columns):
+  column_value = [ row [i] for row in data if row[i] is not None]
+  mean_value = sum(column_value)/ len(column_value)
+  means.append(mean_value)
+  print(means)
