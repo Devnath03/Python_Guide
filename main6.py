@@ -154,7 +154,8 @@ data = [
     [None, 500, 0.2],
 ]
 
-out = [ row for row in data ] 
+outs = [ row for row in data ] 
+print(outs)
 print()
 out = [ row for row in data ]
 print(out)
