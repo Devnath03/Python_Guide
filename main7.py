@@ -113,3 +113,43 @@ def add(a, b):
 
 # Example usage
 print(add(5, 3))  # Output: 8
+
+
+# ---------------------------------------
+# Sample Question
+# 1. Basic Function Example
+# ---------------------------------------
+
+# Define a function that accepts a user's name and a book title
+def library(name, title):
+    # Returns a formatted message saying the user borrowed the book
+    return " " + name + " Borrowed " + title + " From the Library."
+
+# Call the function with name and book title, and store the result
+book = library("Jhon", "The Great Gatsby")
+
+# Print the result
+print(book)  # Output:  Jhon Borrowed The Great Gatsby From the Library.
+print()      # Prints a blank line for spacing
+
+
+# ---------------------------------------
+# 2. Function with History Tracking
+# ---------------------------------------
+
+# Create an empty list to store borrowing history
+history = []
+
+# Define a function that also logs the borrowing action into the 'history' list
+def library(name, title):
+    # Append a dictionary with name and title to the history list
+    history.append({"name": name, "title": title})
+    
+    # Return a formatted borrowing message
+    return " " + name + " Borrowed " + title + " From the Library."
+
+# Call the function, which adds to history and returns the message
+book = library("Jhon", "The Great Gatsby")
+
+# Print the borrowing message
+print(book)  # Output:  Jhon Borrowed The Great Gatsby From the Library.
