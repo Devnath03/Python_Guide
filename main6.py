@@ -100,3 +100,15 @@ print(renegative)  # Output: [0, 8, 6, 5, 0, 4]
 num_list = [-7, 8, 6, 5, -3, 4]
 renegative = [x if x >= 0 else 0 for x in num_list]
 print(renegative)  # Output: [0, 8, 6, 5, 0, 4]
+print()
+
+# 
+list = [ 1, 2, 3]
+list1 = [4, 5, 6]
+sum_list = [x + y for x , y in zip (list, list1)]
+print(sum_list)
+
+# matrix
+matrix = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+transpose = [[row [i] for row in matrix ] for i in range (len(matrix[0]))]
+print(transpose)
