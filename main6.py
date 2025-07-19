@@ -136,29 +136,50 @@ transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 print(transpose)
 print()
 
-#
+# ---------------------------------------
+# Example 1: Filtering rows where 3rd column is not None
+# ---------------------------------------
+
 dataster = [
-    [1, 200, None ],
+    [1, 200, None],
     [2, 300, 2.5],
     [3, 400, 0.7],
     [4, 500, None],
 ]
 
-output = [ col for col in dataster if col[2] is not None]
-print(output)
+# Create a new list that includes only the rows where the 3rd column (index 2) is not None
+output = [col for col in dataster if col[2] is not None]
+
+# Print the filtered list
+print(output)  # Output: [[2, 300, 2.5], [3, 400, 0.7]]
+
+# ---------------------------------------
+# Example 2: Calculating mean of each column (excluding None values)
+# ---------------------------------------
 
 data = [
-    [1, 200, None ],
+    [1, 200, None],
     [2, 300, 0.5],
     [3, None, 0.7],
     [None, 500, 0.2],
 ]
 
+# Get the number of columns (based on the first row)
 num_columns = len(data[0])
+
+# Create an empty list to store the mean of each column
 means = []
 
+# Loop through each column index
 for i in range(num_columns):
-  column_value = [ row [i] for row in data if row[i] is not None]
-  mean_value = sum(column_value)/ len(column_value)
-  means.append(mean_value)
-  print(means)
+    # Extract all non-None values from the current column
+    column_value = [row[i] for row in data if row[i] is not None]
+    
+    # Calculate the mean (average) of the column
+    mean_value = sum(column_value) / len(column_value)
+    
+    # Append the mean to the list of means
+    means.append(mean_value)
+    
+    # Print the list of means after each iteration
+    print(means)  # Shows cumulative list after each column calculation
