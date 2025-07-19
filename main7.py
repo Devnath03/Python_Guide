@@ -56,22 +56,60 @@ hello("Devnath", 20)  # Output: Hello Devnath 20
 hello("Jayasekara", 22)  # Output: Hello Jayasekara 22
 print()
 
-# 
-def hello(name,age=15):
-    return "Hello"+ "" + name + " " + str(age)
+# ---------------------------------------
+# Function with Default Argument and Return Value
+# ---------------------------------------
 
-it = hello("Devnath" , 22)
-its = hello("jayasekara" , 25)
-print(it)
-print(its) 
+# Define a function that takes a name and age (default is 15 if not provided)
+def hello(name, age=15):
+    # Returns a greeting string, age is converted to string for concatenation
+    return "Hello " + name + " " + str(age)
 
-#variable Scpopre
-# Global scope
+# Call the function and store the returned value in variables
+it = hello("Devnath", 22)
+its = hello("Jayasekara", 25)
+
+# Print the returned greeting messages
+print(it)   # Output: Hello Devnath 22
+print(its)  # Output: Hello Jayasekara 25
+
+
+# ---------------------------------------
+# Variable Scope Example
+# ---------------------------------------
+
+# Global variable (accessible everywhere)
 message = "Hello World"
 
-def test ():
-    global message 
-    message = "Hello World now"
-    print(message)
+# Define a function to modify the global variable
+def test():
+    global message  # Tells Python to use the global variable
+    message = "Hello World now"  # Modify the global variable
+    print(message)  # Output: Hello World now
 
+# Call the function
 test()
+
+
+# ---------------------------------------
+# Function with Docstring (Documentation)
+# ---------------------------------------
+
+# Define a function to add two numbers, with a proper docstring
+def add(a, b):
+    a = 20
+    b = 12
+    """
+    This function adds two numbers.
+
+    Parameters:
+        a (int): First number
+        b (int): Second number
+
+    Returns:
+        int: Sum of a and b
+    """
+    return a + b
+
+# Example usage
+print(add(5, 3))  # Output: 8
