@@ -159,10 +159,38 @@ for i, letter in enumerate(letters):
 # List Comprehensions
 # List Comprehensions mean
 
-fruits = ["apple", "Banana" , "Chery"]
+fruits = ["apple", "Banana" , "Cherry"]
 full_fruits = [fruit for fruit in fruits]
 print(full_fruits)
 
-fruits = ["apple", "Banana" , "Chery"]
+fruits = ["apple", "Banana" , "Cherry"]
 filtered_fruits = [fruit.upper() for fruit in fruits if fruit != "Banana"]
 print(filtered_fruits)
+
+fruits = ["apple", "Banana" , "Cherry"]
+filtered_fruits = [fruit.upper() for fruit in fruits if fruit == "Banana"]
+print(filtered_fruits)
+
+fruits = ["apple", "Banana" , "Cherry"]
+filtered_fruits = [fruit.upper()+ "Fru" for fruit in fruits ]
+print(filtered_fruits)
+print()
+
+data = [
+    [ 1, 200, None],
+    [ 2, 300, 0.5],
+    [ 3, 250, 0.7],
+    [ 4, 500, 0.5]
+]
+
+column_values = [row [0] for row in data if row[0] is not None]
+print(column_values)
+print()
+
+column_values = [row [1] for row in data if row[1] is not None]
+print(column_values)
+print()
+
+column_values = [row [2] for row in data if row[1] is not None]
+print(column_values)
+print()
