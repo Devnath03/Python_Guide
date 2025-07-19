@@ -153,3 +153,55 @@ book = library("Jhon", "The Great Gatsby")
 
 # Print the borrowing message
 print(book)  # Output:  Jhon Borrowed The Great Gatsby From the Library.
+
+# ---------------------------------------
+# Lambda Expressions
+# ---------------------------------------
+
+# Lambda expression for addition
+# 'lambda x, y: x + y' defines an anonymous function that returns the sum of x and y
+add = lambda x, y: x + y
+print(add(2, 3))  # Output: 5
+
+
+# ---------------------------------------
+# Using lambda with filter() function
+# ---------------------------------------
+
+# Define a set of city names
+cities = { "New York", "Canada", "United Kingdom", "Chicago", "Mount View", "Denver" }
+
+# Use filter() to select only cities with name length less than 10 characters
+# lambda city: len(city) < 10 is the filtering condition
+short_cities = list(filter(lambda city: len(city) < 10, cities))
+
+# Print the filtered list of short-named cities
+print(short_cities)  # Output may vary based on set order
+
+
+# ---------------------------------------
+# Repeated Lambda Usage for Different Operations
+# ---------------------------------------
+
+# Lambda for addition again (redefined as 'adds')
+adds = lambda p, q: p + q
+print(adds(20, 30))  # Output: 50
+print(adds(12, 13))  # Output: 25
+print(adds(21, 31))  # Output: 52
+
+
+# Lambda for multiplication (reusing same variable name 'adds')
+adds = lambda p, q: p * q
+print(adds(20, 30))  # Output: 600
+print(adds(12, 13))  # Output: 156
+print(adds(21, 31))  # Output: 651
+
+
+# Lambda for subtraction (again reusing 'adds')
+adds = lambda p, q: p - q
+print(adds(20, 30))  # Output: -10
+print(adds(12, 13))  # Output: -1
+print(adds(21, 31))  # Output: -10
+
+
+
