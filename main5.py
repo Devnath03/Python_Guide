@@ -160,9 +160,9 @@ for i, letter in enumerate(letters):
 # List Comprehensions mean
 
 fruits = ["apple", "Banana" , "Chery"]
-filtered_fruits = [fruit for fruit in fruits]
-print(filtered_fruits)
+full_fruits = [fruit for fruit in fruits]
+print(full_fruits)
 
 fruits = ["apple", "Banana" , "Chery"]
-filtered_fruits = [fruit for fruit in fruits if fruit != "Banana"]
+filtered_fruits = [fruit.upper() for fruit in fruits if fruit != "Banana"]
 print(filtered_fruits)
