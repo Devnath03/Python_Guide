@@ -91,16 +91,22 @@ print(ob1.name)
 print(ob1.age)
 
 #Polymerphism
+# Polymorphism Example
+
+# Define a Parent class
 class Parent:
     def greet(self):
-        print("Parent Class")
+        print("Parent Class")  # Method defined in Parent class
 
+# Define a Child class that inherits from Parent
 class Child(Parent):
     def greet(self):
-        print ("Hello Child Class")
-    
-ob1 = Child()
-ob1.greet()
+        print("Hello Child Class")  # Overriding the greet() method from Parent
 
+# Create an object of the Child class
+ob1 = Child()
+ob1.greet()  # This will call the greet() method of Child class (demonstrates polymorphism)
+
+# Now create an object of the Parent class
 ob1 = Parent()
-ob1.greet()
+ob1.greet()  # This will call the greet() method of Parent class
