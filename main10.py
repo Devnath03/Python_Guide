@@ -16,7 +16,7 @@ cat = animal()
 cat.name = 'cat'
 
 # Print the name of the cat
-print(cat.name)
+print("Method is" , cat.name)
 
 # Call the 'eat' method on the cat instance with 'fish' as an argument
 cat.eat('fish')
@@ -49,3 +49,43 @@ animal1.name = 'Zeeyara'
 
 # Print the name of the dog
 print(animal1.name)
+
+
+# Encapsulation Example 1: Using private variables and getters/setters
+class Student:
+    # Private attribute (name is made private by using double underscores)
+    __name = ''
+
+    # Getter method to access the private attribute
+    def getname(self):
+        return self.__name
+
+    # Setter method to modify the private attribute
+    def setname(self, name):
+        self.__name = name
+
+# Create an instance of Student
+ob1 = Student()
+
+# Set the private name attribute using the setter method
+ob1.setname('Jhon')
+
+# Access and print the name using the getter method
+print(ob1.getname())
+print()
+
+
+# Encapsulation Example 2: Using constructor (__init__) for attribute initialization
+class animal:
+    # Constructor method with parameters for name and age
+    def __init__(self, Name, age):
+        # Public attributes (no underscore, accessible outside)
+        self.name = Name
+        self.age = age
+
+# Create an instance of the animal class
+ob1 = animal('dog', 10)
+
+# Access and print the public attributes
+print(ob1.name)
+print(ob1.age)
