@@ -89,3 +89,18 @@ ob1 = animal('dog', 10)
 # Access and print the public attributes
 print(ob1.name)
 print(ob1.age)
+
+#Polymerphism
+class Parent:
+    def greet(self):
+        print("Parent Class")
+
+class Child(Parent):
+    def greet(self):
+        print ("Hello Child Class")
+    
+ob1 = Child()
+ob1.greet()
+
+ob1 = Parent()
+ob1.greet()
